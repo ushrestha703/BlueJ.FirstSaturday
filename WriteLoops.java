@@ -174,11 +174,12 @@ public class WriteLoops {
         while(gpsCurrentLocation() != "Home")
         {
             driveSomeMore();
+            w = w + 1;
         }
         
         System.out.println("Honey, I’m Home!");
         
-            w = w + 1;
+            
         // you need to use a .equals for two Strings.
 
             // calling
@@ -253,6 +254,7 @@ public class WriteLoops {
         while (serverIsRunning() == true) {
             //System.out.println(i);
             waitFor(5);
+            w = w + 1;
         }
         if(serverIsRunning() == false)
         {
@@ -264,7 +266,7 @@ public class WriteLoops {
         //System.out.println(sendEmergencyText(help, adminPhoneNumber));
         //tryServerRestart();
         // calling
-        w = w + 1;
+        
         // each time through the inner loop
         
         return w;
